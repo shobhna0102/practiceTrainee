@@ -1,0 +1,64 @@
+
+<!--Mobile validation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        //Regular Expession & Pattern Matching....
+
+        function  validate()
+        {
+                let username=document.getElementById("uname").value;
+                //let regx =/E00/;
+                // regx= new RegExp("E00","i");
+                //let regx =/[^a-z]abc /;
+                // \d - match any digit([0-9])
+                // \w match any word character(a-z,A-Z,0-9 & _ )
+                // \S match whitespace character
+                // \t match a tab only
+
+                let regx = /[7-9]\d{9}/;
+
+
+                if(regx.test(username))
+                {
+
+                    //alert("Valid username");
+                    document.getElementById("lbluser").innerHTML="valid";
+                    document.getElementById("lbluser").style.visibility="visible";
+                    document.getElementById("lbluser").style.color="green";
+
+                    
+                }
+                else
+                {
+                    //alert("Invalid Username")
+                    //document.getElementById("lbluser").style.visibility="visible";
+                    document.getElementById("lbluser").innerHTML="Invalid";
+                    document.getElementById("lbluser").style.visibility="visible";
+                    document.getElementById("lbluser").style.color="red";
+
+
+                }
+           
+        }
+
+
+    </script>
+</head>
+<body>
+    <form >
+        <input id="uname" placeholder="Enter Your Mobile" type="text"/>
+        <label id="lbluser" style="color: red; visibility:hidden">Invalid</label><br><br>
+        
+        <button id="bnt1"onclick="validate()" type="button">Submit</button>
+
+    </form>
+    
+</body>
+</html>

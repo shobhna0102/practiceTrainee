@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+        // this is basic javascript object program..
+
+        let person={
+            myname:"shobhna",
+            myage:20
+        };
+
+        person.myname='bhumi'; // change  the value in objects..
+        person['myname']='nayus';// second way to change values..
+        console.log(person);
+        console.log(person.myname);
+        console.log(person);
+
+
+        var Car={
+            c_brand:"Tesla",
+            c_model:"Model 3",
+            c_price:300000,
+            carAutopilots: function()       //method define inside the object
+            {
+                console.log("car auto pilots...");
+            }
+
+        }
+
+        //console.log(Car.carAutopilots());
+        Car.fueltype="Electric";//Add element in the objects..
+        delete Car.c_price; //Delete element in the object..
+        console.log(Car);
+        
+//    fdedfdsfsfsdfdsfsd
+         // using function  
+
+        // function Cars(c_brand,c_model,c_price)
+        // {
+        //     this.c_brand=c_brand;
+        //     this.c_model=c_model;
+        //     this.c_price=c_price;
+        //     this.carAutopilot=function()
+        //     {
+        //         console.log("this car is auto pilot ");
+        //     }
+
+        // }
+        // let car1=new Cars("tesla","model 3",4500000);
+        // car1.carAutopilot();
+        // console.log(car1);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        //this is basic Array program...
+ 
+        let colors=["red","green","blue","yellow","pink"];
+
+         console.log(colors[2]); //get specific element of the array based on index..
+         console.log(colors[colors.length-1]); //get the last element of the array..
+
+         // for....in.. loop in Array
+
+         let color=['red','pink','black','green'];
+
+        for (let i  in color)
+        {
+            console.log(i); //diplay the  index of all element of the array..
+        }
+
+        //for.... of... loop in Array
+
+        for (let i  of  color)
+        {
+            console.log(i); //diplay the  value of all element of the array...
+        }
+
+        let colors1=new Array("red","green","blue","yellow","pink"); //second way to create an array..
+        console.log(colors1);
+        colors1.push("black");// Add element at the  last...
+
+        colors1.unshift("dark");//Add element at the  first..
+
+        console.log(colors1.pop());//remove last element..
+
+        console.log(colors1.shift());//remove first element..
+
+        onsole.log(colors1.pop());
+
+
+        console.log(colors1);
+
+        // for.. loop in Array..
+
+        // for (let i=0;i<colors1.length;i++)
+        // {
+        //     console.log(colors1[i]);
+        // }
+
+
+        
+       
+
+    
+    </script> 
+
+</head>
+<body>
+   
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function validate()
+        {
+            let username=document.getElementById("uname");
+            let passwd=document.getElementById("pwd");
+
+            if(username.value.trim() =="")
+
+            {
+                //alert("Please must be input...");
+                username.style.border="solid 2px red";
+                document.getElementById("lbluser")
+                return false;
+
+            }
+            else if(passwd.value.trim()=="")
+            {
+                alert("Please must be input...");
+                return false;
+            }
+            else if(passwd.value.trim().length<5)
+            {
+                alert("password too short...");
+                return false;
+
+            }
+            else
+            {
+                return true;
+            }
+            
+        }
+
+
+    </script>
+</head>
+<body>
+    <form action="wlcm.html" onsubmit=" return validate();">
+        <input id="uname" placeholder="Enter Your Name" type="text">
+        <label id="lbluser" style="color: red; visibility:hidden;">Invalid</label><br><br>
+        <input id="pwd" placeholder="Enter Your Password" type="password"/><br><br>
+        <button id="bnt1" value="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+<!-- Timing Fuction program....  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+       // 1. setTimeout() allows you to execute statement Once after an interval
+       //2. clearTimeout() method clears a timer set with the setTimeout()method
+       //3. setInterval() allows you to execute statements REPEATEDLY after an interval 
+       //4. clearInterval method clears a timer set with the setInterval() method
+
+       let data=0;
+       let second=0;
+function printMsg()
+{
+    //document.getElementById("txt").innerHTML="5 second have passed..";
+    document.getElementById("txt").innerHTML=second+"seconds";
+    second++;
+
+}
+function start()
+{
+    //data=window.setTimeout(printMsg,5000);
+    data=window.setInterval(printMsg,1000);
+}
+function stop()
+{
+    //window.clearTimeout(data);
+    window.clearInterval(data);
+}
+
+
+    </script>
+</head>
+<body>
+    <button onclick="start()" id="btnAdd">Start</button>
+    <h3 id="txt">Some Text</h3>
+    <button onclick="stop()" id="btnstop">Stop</button>
+
+    
+</body>
+</html>
